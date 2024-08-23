@@ -1,0 +1,30 @@
+.projects {
+}
+
+.projects__title {
+    margin-bottom: 80px;
+    font-weight: 700;
+    font-size: 58px;
+    text-align: center;
+    color: #f6f6f6;
+}
+.project__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    img {
+        filter: grayscale(100%);
+        // mix-blend-mode: multiply;
+
+        &:hover {
+            filter: none;
+            mix-blend-mode: normal;
+        }
+    }
+}

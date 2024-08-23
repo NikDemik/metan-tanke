@@ -1,0 +1,31 @@
+.btn {
+    display: inline-block;
+
+    border-radius: 10px;
+    padding: 14px 30px;
+    
+
+    background: linear-gradient(90deg, #3fe8ab 0%, #78cdcd 100%);
+
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #111;
+
+    transition: all 0.2s ease-in;
+
+    @include mobile {
+        font-size: 14px;
+
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &--wide {
+        text-align: center;
+    }
+}
