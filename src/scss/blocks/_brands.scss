@@ -1,0 +1,65 @@
+.brands {
+    padding: 100px 0;
+}
+
+.brands__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+$animationSpeed: 50s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-300px * 19))}
+}
+
+
+// Styling
+.slider {
+	display: flex;
+	align-items: center;
+	// background: white;
+	height: 140px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+		content: "";
+		height: 140px;
+		position: absolute;
+		width: 140px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(300px * 26);
+	}
+	
+	.slide {
+		display: flex;
+		align-items: center;
+		margin: 0 30px;
+		height: 140px;
+		width: 300px;
+	}
+}

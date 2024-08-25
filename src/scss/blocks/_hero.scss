@@ -1,0 +1,80 @@
+.hero {
+    position: relative;
+    height: 780px; 
+}
+
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    .hero__circle {   
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        width: 690px;
+        height: 690px;
+        border-radius: 50%;
+        border: 6px solid rgba(197, 229, 228, 0.2);
+
+        .circle-content {
+            width: 610px;
+            height: 610px;
+            border-radius: 50%;
+            background-image: url(../../img/hero/oborudovanie.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            // background: linear-gradient(to right, #3fe8ab, #78cdcd);
+        }
+    }
+}
+
+.hero__text {
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    padding: 152px 0 152px 20px;
+
+    @include mobile {
+        width: 100%;
+        padding: 76px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 119%;
+    color: #f6f6f6;
+}
+
+.hero__desc {
+    max-width: 850px;
+    margin-bottom: 60px;
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #969696;
+
+    @include mobile {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+.btn-hero {
+    padding: 22px 54px;
+}

@@ -1,0 +1,29 @@
+.info {
+    margin-bottom: 200px;    
+}
+.container {
+}
+.info__block {
+}
+.info__title {
+    margin-bottom: 40px;
+
+
+    font-weight: 700;
+    font-size: 44px;
+    text-align: center;
+    color: #f6f6f6;
+}
+.info__text {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #969696;
+
+    span {
+        color: var(--accent);
+    }
+}
